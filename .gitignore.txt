@@ -28,3 +28,14 @@
 **/dist/
 **/nbdist/
 **/.nb-gradle/
+
+
+# Block IntelliJ settings everywhere
+**/.idea/
+*.iml
+
+# Block the heavy Maven jar file, but ALLOW the wrapper text configurations
+**/.mvn/wrapper/maven-wrapper.jar
+!**/mvnw
+!**/mvnw.cmd
+!**/.mvn/wrapper/maven-wrapper.properties
