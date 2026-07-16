@@ -17,7 +17,18 @@ public class Main {
 
         // ------------------> Spring core <------------------
 
-        // start IOC container using annotation based configuration
-        ApplicationContext context = new AnnotationConfigApplicationContext();
+        // start IOC container using annotation based configuration and get the rules from the reflection of AppConfig
+        ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+        /*
+            As the above line executed IOC container created the beans for our classes which have @Component annotation.
+            Now we don't have to create an object using new keyword, we just call the object
+         */
+
+//        EmailService emailNotification = context.getBean(EmailService.class);
+//        emailNotification.sendNotification();
+
+        OrderService order = context.getBean(OrderService.class);
+        order.placeOrder();
+
     }
 }
