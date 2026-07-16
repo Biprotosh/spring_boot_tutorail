@@ -1,0 +1,30 @@
+# Root patterns for nested projects
+**/target/
+**/.mvn/
+**/build/
+**/.vscode/
+**/.idea/
+
+# Specific files to ignore everywhere
+**/*.iml
+**/*.iws
+**/*.ipr
+**/.classpath
+**/.project
+**/.settings/
+**/.factorypath
+**/.springBeans
+**/.sts4-cache
+**/.apt_generated
+
+# Maven wrapper rules
+**/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# NetBeans specific
+**/nbproject/private/
+**/nbbuild/
+**/dist/
+**/nbdist/
+**/.nb-gradle/
