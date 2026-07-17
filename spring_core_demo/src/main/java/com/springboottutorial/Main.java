@@ -30,5 +30,8 @@ public class Main {
         OrderService order = context.getBean(OrderService.class);
         order.placeOrder();
 
+        UserService user = context.getBean(UserService.class);
+        System.out.println(user.getName());
+
     }
 }

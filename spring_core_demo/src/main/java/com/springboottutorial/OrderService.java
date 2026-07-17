@@ -18,7 +18,7 @@ public class OrderService {
     private NotificationService notification; // instance variable
 
     @Autowired // automatically wired NotificationService, Constructor injection
-    public OrderService(@Qualifier("sMSService") NotificationService notification){
+    public OrderService(@Qualifier("emailService") NotificationService notification){
         this.notification = notification;
     }
 

@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component // tells spring core that you manage this class
-@Qualifier // it tells, SMSService type of bean is qualify for a certain dependency
+@Qualifier("smsService") // it tells, SMSService type of bean is qualify for a certain dependency
 public class SMSService implements NotificationService {
 
     @Override
