@@ -1,9 +1,9 @@
 package com.springboottutorial;
 
-import com.springboottutorial.notification.EmailService;
-import com.springboottutorial.notification.SMSService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import com.springboottutorial.circularDependency.OrderServiceCD;
+
 
 public class Main {
     static void main() {
@@ -27,11 +27,17 @@ public class Main {
 //        EmailService emailNotification = context.getBean(EmailService.class);
 //        emailNotification.sendNotification();
 
-        OrderService order = context.getBean(OrderService.class);
-        order.placeOrder();
+//        OrderService order = context.getBean(OrderService.class);
+//        order.placeOrder();
+//
+//        UserService user = context.getBean(UserService.class);
+//        System.out.println(user.getName());
 
-        UserService user = context.getBean(UserService.class);
-        System.out.println(user.getName());
 
+        // ------------------> Circular Dependency <------------------
+        // we solve this by refactoring the code and dividing the responsibilities, because circular dependency
+        // always need to be avoided even if we can refactor it
+        
+//        OrderServiceCD order = context.getBean(OrderServiceCD.class);
     }
 }
