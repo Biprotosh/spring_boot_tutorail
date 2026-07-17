@@ -1,5 +1,6 @@
 package com.springboottutorial;
 
+import com.springboottutorial.beanScopes.CartService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import com.springboottutorial.circularDependency.OrderServiceCD;
@@ -34,10 +35,22 @@ public class Main {
 //        System.out.println(user.getName());
 
 
-        // ------------------> Circular Dependency <------------------
-        // we solve this by refactoring the code and dividing the responsibilities, because circular dependency
-        // always need to be avoided even if we can refactor it
-        
+        /*
+            ------------------> Circular Dependency <------------------
+            we solve this by refactoring the code and dividing the responsibilities, because circular dependency
+            always need to be avoided even if we can refactor it
+         */
+
 //        OrderServiceCD order = context.getBean(OrderServiceCD.class);
+
+        /*
+            ------------------> Bean Scopes <------------------
+            By default beans scopes is singleton but can change it using @Scope("prototype")
+         */
+
+//        CartService cart1 = context.getBean(CartService.class);
+//        CartService cart2 = context.getBean(CartService.class);
+//
+//        System.out.println(cart1 == cart2);
     }
 }

@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="388f6cdd-3a67-427b-85d5-0eb6f4e4091a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboottutorial/beanScopes/CartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboottutorial/circularDependency/OrderServiceCD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboottutorial/circularDependency/PaymentServiceCD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboottutorial/beanScopes/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboottutorial/beanScopes/B.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboottutorial/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboottutorial/AppConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/springboottutorial/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboottutorial/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboottutorial/beanScopes/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboottutorial/beanScopes/CartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboottutorial/circularDependency/OrderServiceCD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboottutorial/circularDependency/OrderServiceCD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboottutorial/circularDependency/PaymentServiceCD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboottutorial/circularDependency/PaymentServiceCD.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

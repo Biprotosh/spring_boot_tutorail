@@ -2,7 +2,7 @@ package com.springboottutorial.circularDependency;
 
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class PaymentServiceCD {
 
     private OrderServiceCD order;

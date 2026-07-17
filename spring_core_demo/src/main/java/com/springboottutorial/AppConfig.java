@@ -1,5 +1,6 @@
 package com.springboottutorial;
 
+import com.springboottutorial.beanScopes.CartService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -13,5 +14,20 @@ public class AppConfig {
     // this method will call by spring so that it can take the first step and start managing beans
     public UserService createUser(){
         return new UserService("Charon", 25);
+    }
+
+    /*
+        Bean scope example. In the methods getCart1(), getCart2() create 2 beans even if the scope is singleton because
+        as we know this scope create beans per bean definition and both the bean are singleton by itself. And after the
+        IOC container is up it also creates a bean because of eager initialization.
+     */
+    @Bean
+    public CartService getCart1(){
+        return new CartService();
+    }
+
+    @Bean
+    public CartService getCart2(){
+        return new CartService();
     }
 }
