@@ -1,13 +1,13 @@
-package com.springboottutorial.circularDependency;
+package com.springboottutorial;
 
 import org.springframework.stereotype.Component;
 
-//@Component
-public class PaymentServiceCD {
+@Component
+public class PaymentService {
 
-    private OrderServiceCD order;
+    private OrderService order;
 
-    public PaymentServiceCD(OrderServiceCD order){
+    public PaymentService(OrderService order){
         this.order = order;
     }
 

@@ -3,7 +3,6 @@ package com.springboottutorial;
 import com.springboottutorial.beanScopes.CartService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import com.springboottutorial.circularDependency.OrderServiceCD;
 
 
 public class Main {
@@ -33,15 +32,6 @@ public class Main {
 //
 //        UserService user = context.getBean(UserService.class);
 //        System.out.println(user.getName());
-
-
-        /*
-            ------------------> Circular Dependency <------------------
-            we solve this by refactoring the code and dividing the responsibilities, because circular dependency
-            always need to be avoided even if we can refactor it
-         */
-
-//        OrderServiceCD order = context.getBean(OrderServiceCD.class);
 
         /*
             ------------------> Bean Scopes <------------------

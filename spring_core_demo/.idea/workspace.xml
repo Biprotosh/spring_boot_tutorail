@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="388f6cdd-3a67-427b-85d5-0eb6f4e4091a" name="Changes" comment="" />
+    <list default="true" id="388f6cdd-3a67-427b-85d5-0eb6f4e4091a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../circular_dependency/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../circular_dependency/src/main/java/com/springboottutorial/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../circular_dependency/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../circular_dependency/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../circular_dependency/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../circular_dependency/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../circular_dependency/src/main/java/com/springboottutorial/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../circular_dependency/src/main/java/com/springboottutorial/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboottutorial/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboottutorial/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboottutorial/circularDependency/OrderServiceCD.java" beforeDir="false" afterPath="$PROJECT_DIR$/../circular_dependency/src/main/java/com/springboottutorial/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboottutorial/circularDependency/PaymentServiceCD.java" beforeDir="false" afterPath="$PROJECT_DIR$/../circular_dependency/src/main/java/com/springboottutorial/PaymentService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,28 +55,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Maven.spring_core_demo [clean].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Biprotosh/Spring_Boot_Tutorial/spring_core_demo",
-    "onboarding.tips.debug.path": "D:/Biprotosh/java/GameDev/spring_core_demo/src/main/java/com/springboottutorial/Main.java",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.spring_core_demo [clean].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Biprotosh/Spring_Boot_Tutorial/spring_core_demo&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/Biprotosh/java/GameDev/spring_core_demo/src/main/java/com/springboottutorial/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="25" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.springboottutorial.Main" />
+      <module name="spring_core_demo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.springboottutorial.*" />
@@ -76,17 +87,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="spring_core_demo" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="spring_core_demo" />
-      <option name="filePath" />
-      <method v="2" />
     </configuration>
   </component>
   <component name="TaskManager">

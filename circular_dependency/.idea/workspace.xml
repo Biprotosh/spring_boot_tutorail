@@ -4,16 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78acbfd6-8b7f-4e67-b2b0-4d2e1c96bb13" name="Changes" comment="" />
+    <list default="true" id="78acbfd6-8b7f-4e67-b2b0-4d2e1c96bb13" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboottutorial/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/springboottutorial/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboottutorial/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_core_demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_core_demo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_core_demo/src/main/java/com/springboottutorial/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring_core_demo/src/main/java/com/springboottutorial/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_core_demo/src/main/java/com/springboottutorial/circularDependency/OrderServiceCD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboottutorial/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_core_demo/src/main/java/com/springboottutorial/circularDependency/PaymentServiceCD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboottutorial/PaymentService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3,
-  "fromUser": false
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Biprotosh"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Biprotosh/spring_boot_tutorail",
+    "accountId": "852db1bd-bba4-4e29-9509-75bfa0a86cd3"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3GdLMu1VMtgn0nowITg7SCwKsdO" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -21,14 +53,24 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Biprotosh/Spring_Boot_Tutorial/circular_dependency/src/main/java/com/springboottutorial",
     "onboarding.tips.debug.path": "D:/Biprotosh/java/GameDev/circular_dependency/src/main/java/com/springboottutorial/Main.java"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Biprotosh\Spring_Boot_Tutorial\circular_dependency\src\main\java\com\springboottutorial" />
+    </key>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="78acbfd6-8b7f-4e67-b2b0-4d2e1c96bb13" name="Changes" comment="" />
@@ -42,15 +84,7 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/springboottutorial/Main.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
   </component>
 </project>
