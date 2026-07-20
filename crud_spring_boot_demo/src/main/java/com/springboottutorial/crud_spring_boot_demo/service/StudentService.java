@@ -1,0 +1,70 @@
+package com.springboottutorial.crud_spring_boot_demo.service;
+
+import com.springboottutorial.crud_spring_boot_demo.entity.Student;
+import com.springboottutorial.crud_spring_boot_demo.repository.StudentRepository;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import java.util.List;
+import java.util.Optional;
+
+@Service // internally uses @Component
+public class StudentService {
+
+    private final StudentRepository studentRepository;
+
+    public StudentService(StudentRepository studentRepository){
+        this.studentRepository = studentRepository;
+    }
+
+    public Student createStudent(Student studentReq){
+        System.out.println("Inside student service");
+        Student studentRes = studentRepository.save(studentReq);
+        System.out.println("Exiting student service");
+
+        return studentRes;
+    }
+
+    public Student getStudent(Long id){
+        Optional<Student> studentRes = studentRepository.findById(id);
+
+        return studentRes.orElse(null);
+    }
+
+    public List<Student> getAllStudent(){
+        return studentRepository.findAll();
+    }
+
+    public Student updateStudent(Long id, @RequestBody Student studentReq){
+        // if student doesn't exist don't update it
+        Optional<Student> existingStudent = studentRepository.findById(id);
+
+        if(existingStudent.isEmpty())
+            return null;
+
+        Student studentToSave = existingStudent.get();
+
+        studentToSave.setName(studentReq.getName());
+        studentToSave.setAge(studentReq.getAge());
+        studentToSave.setEmail(studentReq.getEmail());
+        studentToSave.setSubject(studentReq.getSubject());
+        studentToSave.setRollNo(studentReq.getRollNo());
+
+        return studentRepository.save(studentToSave);
+    }
+
+    public Student deleteStudent(Long id){
+        // if student doesn't exist don't update it
+        Optional<Student> existingStudent = studentRepository.findById(id);
+
+        if(existingStudent.isEmpty())
+            return null;
+
+        studentRepository.deleteById(id);
+        return existingStudent.get();
+    }
+}
+
+/*
+    Business logic comes under service classes
+ */
