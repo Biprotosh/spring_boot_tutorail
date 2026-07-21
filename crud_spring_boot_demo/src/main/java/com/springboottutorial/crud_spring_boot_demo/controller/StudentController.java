@@ -84,6 +84,16 @@ public class StudentController {
         return ResponseEntity.status(HttpStatus.GONE).body(deletedStudent);
     }
 
+    @PatchMapping("/{id}")
+    public ResponseEntity<String> deleteStudentSoftly(@PathVariable Long id){
+        Boolean isDeleted = studentService.deleteStudentSoftly(id);
+
+        if(!isDeleted)
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Record not found");
+
+        return ResponseEntity.status(HttpStatus.OK).body("Record Deleted");
+    }
+
 }
 
 /*
@@ -96,4 +106,6 @@ public class StudentController {
     In get a student we can get the id in 2 ways
     1. With path variable - /get/1
     2. With query parameters - /get?id=1&name=bheem
+
+    Patch is used to changa a particular key from a row of data
  */

@@ -4,6 +4,9 @@ import com.springboottutorial.crud_spring_boot_demo.entity.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+import java.util.Optional;
+
 @Repository
 public interface StudentRepository extends JpaRepository<Student, Long> {
 
@@ -21,6 +24,10 @@ public interface StudentRepository extends JpaRepository<Student, Long> {
 //
 //        return dummyStudent; // sending dummy data as response
 //    }
+
+    Optional<Student> findByIdAndDeletedIsFalse(Long id);
+
+    List<Student> findAllAndDeletedIsFalse();
 }
 
 /*
