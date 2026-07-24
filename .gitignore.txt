@@ -39,4 +39,4 @@
 !**/mvnw
 !**/mvnw.cmd
 !**/.mvn/wrapper/maven-wrapper.properties
-/tomcat/
+tomcat/
