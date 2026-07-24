@@ -38,12 +38,13 @@ public class StudentService {
 
     public List<Student> getAllStudent(){
 //        return studentRepository.findAll();
-        return studentRepository.findAllAndDeletedIsFalse();
+        return studentRepository.findByDeletedIsFalse();
     }
 
     public Student updateStudent(Long id, @RequestBody Student studentReq){
         // if student doesn't exist don't update it
-        Optional<Student> existingStudent = studentRepository.findById(id);
+//        Optional<Student> existingStudent = studentRepository.findById(id);
+        Optional<Student> existingStudent = studentRepository.findByIdAndDeletedIsFalse(id);
 
         if(existingStudent.isEmpty())
             return null;
@@ -55,10 +56,15 @@ public class StudentService {
         studentToSave.setEmail(studentReq.getEmail());
         studentToSave.setSubject(studentReq.getSubject());
         studentToSave.setRollNo(studentReq.getRollNo());
+        studentToSave.setDeleted(false);
 
         return studentRepository.save(studentToSave);
     }
 
+    /*
+        deleteStudent is work as hard delete, it has very specific use case and even if the record is soft deleted
+        I can delete the record using this hard delete.
+     */
     public Student deleteStudent(Long id){
         // if student doesn't exist don't update it
         Optional<Student> existingStudent = studentRepository.findById(id);
@@ -71,11 +77,15 @@ public class StudentService {
     }
 
     public boolean deleteStudentSoftly(Long id){
-        // if student doesn't exist don't update it
-//        boolean existingStudent = studentRepository.existsById(id);
-//
-//        if(!existingStudent)
+        // if record is already soft deleted then don't delete it
+        Optional<Student> existingStudent = studentRepository.findByIdAndDeletedIsFalse(id);
+
+        if(existingStudent.isEmpty())
             return false;
+
+        existingStudent.get().setDeleted(true);
+        studentRepository.save(existingStudent.get());
+        return true;
     }
 }
 

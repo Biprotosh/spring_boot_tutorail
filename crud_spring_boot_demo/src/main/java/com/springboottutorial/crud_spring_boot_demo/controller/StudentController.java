@@ -34,9 +34,9 @@ public class StudentController {
                 .body(createdStudent);
     }
 
-    // get a student
-    @GetMapping("/{id}")
-    public ResponseEntity<Student> getStudent(@PathVariable Long id){
+    // get a student. the id var in url and in the function parameter need to be same for request parameter
+    @GetMapping("/get")
+    public ResponseEntity<Student> getStudent(@RequestParam Long id){
         Student studentRes = studentService.getStudent(id);
 
         if(studentRes == null)
