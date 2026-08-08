@@ -13,8 +13,9 @@ import java.util.List;
 @WebServlet("/users")
 public class UserServlet extends HttpServlet {
 
-    private UserService userService = new UserService(); // tight coupling
+    private final UserService userService = new UserService(); // tight coupling
 
+    @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         Integer id = Integer.parseInt(request.getParameter("id"));
         String name = request.getParameter("name");
